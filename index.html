@@ -8,52 +8,64 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a class="header-logo-link">
-        <svg class="header-logo" width="145" height="37" aria-label="hidden" focusable="false" viewBox="0 0 145 37"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.49l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.49h7.6v25.2h-7.6v-25.2ZM93.67 23.09c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"
-            fill="#000" />
-          <path d="M83.46.39v10.1l7.6-10.1h-7.6Z" />
-        </svg>
-      </a>
-
-      <form class="searching-form" action="post" method="#">
-        <label class="visually-hidden" for="searching-form-input">Поле поиска</label>
-        <input class="input" type="search" name="searching-form-input" id="searching-form-input">
-        <button class="searching-form-button" type="submit">Найти</button>
-      </form>
-      <ul class="user-navigation">
-        <li class="user-navigation__item user-item">
-          <button class="user-item__cell enter">Войти</button>
-        </li>
-        <li class="user-navigation__item user-item">
-          <button class="user-item__cell compare">Сравнить</button>
-        </li>
-        <li class="user-navigation__item user-item">
-          <button class="user-item__cell cart">Корзина</button>
-          <span class="cart-value">2</span>
-        </li>
-      </ul>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
+    <header class="header container header_position">
+      <div class="container">
+        <div class="header__container">
+          <a class="header-logo-link">
+            <svg class="header-logo" width="145" height="37" aria-label="hidden" focusable="false" viewBox="0 0 145 37"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.22.39v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36.39 0 30.59 0 23.09c0-7.5 5.5-13.3 12.1-13.3 3.41 0 5.91 1.2 7.51 3.1V.39h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.49l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.49h7.6v25.2h-7.6v-25.2ZM93.67 23.09c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.59c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z"
+                fill="#000" />
+              <path d="M83.46.39v10.1l7.6-10.1h-7.6Z" />
+            </svg>
+            <span class="visually-hidden">Логотип Девайс.</span>
+          </a>
+          <div class="header_middle-section">
+            <form class="searching-form" action="post" method="#">
+              <label class="visually-hidden" for="searching-form-input">Поле поиска</label>
+              <input class="searching-form__input" type="search" name="searching-form-input" id="searching-form-input"
+                placeholder="Текст поиска">
+              <button class="searching-form__button" type="submit">Найти</button>
+            </form>
+            <ul class="header__navigation_user navigation list-reset">
+              <li class="navigation__item navigation__item_user">
+                <a class="navigation__link navigation__link_user navigation__link_user_enter" href="#">Войти</a>
+              </li>
+              <li class="navigation__item navigation__item_user">
+                <a class="navigation__link navigation__link_user navigation__link_user_compare" href="#">Сравнить</a>
+              </li>
+              <li class="navigation__item navigation__item_user">
+                <button class="navigation__link navigation__link_user navigation__link_user_cart">Корзина</button>
+                <span class="cart-value">2</span>
+              </li>
+            </ul>
+          </div>
+          <nav class="navigation">
+            <ul class="header__navigation_main navigation list-reset">
+              <li class="navigation__item navigation__item_main">
+                <a class="navigation__link navigation__link_main" href="#">Каталог товаров</a>
+              </li>
+              <li class="navigation__item navigation__item_main">
+                <a class="navigation__link navigation__link_main" href="#">Доставка</a>
+              </li>
+              <li class="navigation__item navigation__item_main">
+                <a class="navigation__link navigation__link_main" href="#">Гарантия</a>
+              </li>
+              <li class="navigation__item navigation__item_main">
+                <a class="navigation__link navigation__link_main" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+    <main class="main-index">
+      <section class="promo">
+
+      </section>
+    </main>
+    <footer class="footer"></footer>
 
 
 
